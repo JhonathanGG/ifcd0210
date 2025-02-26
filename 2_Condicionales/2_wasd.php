@@ -13,7 +13,7 @@ switch ($teclapulsada) {
             break;
     
     default:
-        echo "tecla invalida"
+        echo "tecla invalida";
         break;
 }
 ?>
