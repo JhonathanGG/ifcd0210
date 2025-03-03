@@ -31,14 +31,22 @@ for ($i = 0; $i < count($temperaturas); $i++) {
         if ($temperaturas[$i] > $temperatura_maxima) {
         $temperatura_maxima = $temperaturas[$i];  
     }
-        if ($temperaturas[$i] < $temperatura_minima) {
+
+       if ($temperaturas[$i] < $temperatura_minima) {
         $temperatura_minima = $temperaturas[$i];  
-    }    
-        $suma_temperaturas += $temperaturas[$i];  
+    }
+    
+    
+    $suma_temperaturas += $temperaturas[$i];  // Agregamos la temperatura del día a la suma total
 }
-$temperatura_media = $suma_temperaturas / count($temperaturas); 
+
+// Calculamos la media
+$temperatura_media = $suma_temperaturas / count($temperaturas);  // Promedio = suma de temperaturas / número de días
+
+// Mostrar los resultados
 echo "Temperatura máxima: $temperatura_maxima °C\n";
 echo "Temperatura mínima: $temperatura_minima °C\n";
 echo "Temperatura media: $temperatura_media °C\n";
+
 ?>
 
