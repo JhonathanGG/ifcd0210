@@ -9,3 +9,31 @@
     Si la operación no es ninguna de las anteriores, se ha de mostrar un mensaje de error: "Operación desconocida"
 
 */
+function suma($a, $b) {
+    return $a + $b;
+}
+
+
+function resta($a, $b) {
+    return $a - $b;
+}
+
+
+function multiplicacion($a, $b) {
+    return $a * $b;
+}
+
+
+function division($a, $b) {
+    if ($b == 0) {
+        return "Error: División por cero";
+    }
+    return $a / $b;
+}
+
+
+echo "Suma: " . suma(5, 3) . "\n";
+echo "Resta: " . resta(5, 3) . "\n";
+echo "Multiplicación: " . multiplicacion(5, 3) . "\n";
+echo "División: " . division(5, 0) . "\n";  // Caso con división por 0
+?>
