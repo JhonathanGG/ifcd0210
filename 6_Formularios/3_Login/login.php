@@ -1,6 +1,4 @@
 <?php
-
-
 // comprobar si los valores recibidos del formulario coinciden con los siguientes:
 $usuario = 'admin';
 $password = '$uper$ecr3t';
@@ -12,3 +10,4 @@ if ($usuario === $_POST['usuario'] && $password === $POST['password']) {
 } else {
     header("Location: error.html");    
 }
+?>
