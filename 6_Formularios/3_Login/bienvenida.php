@@ -16,7 +16,7 @@
     <h1>Bienvenid@ usuario: <?= $usuario ?></h1>
 
     <!-- aquí va el formulario de login con usuario(text) y contraseña(password) -->
-    <?php
+<?php
    
  $usuario = $_GET["usuario"];
 
