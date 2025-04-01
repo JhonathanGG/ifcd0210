@@ -2,8 +2,10 @@
 
 function mostrarLista()
 {
-
+   
     //... aquí va el código que lee el fichero json, lo convierte a array y lo "pinta" 
+    $jsonContent = file_get_contents('compra.json'); 
+    $comprasArray = json_decode($jsonContent, true);
 }
 
 ?>
