@@ -8,8 +8,8 @@ foreach ($pelisArray as $peli){
 echo $peli['titulo']."<br>";
 echo $peli['año']."<br>";
 echo $peli['director']."<br>";
-foreach ($peli['genero'] as $genero) {
-echo "genero"."<br>";
+foreach ($peli["genero"] as $genero) {
+echo "$genero"."<br>";
 }
 }
 ?>
